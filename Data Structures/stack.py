@@ -5,9 +5,9 @@ class Stack:
     
     def pop(self):
         if self.empty():
-            self.items.pop()
-        else:
             return None
+        else:
+            return self.items.pop()
     
     def push(self,item):
         self.items.append(item)
