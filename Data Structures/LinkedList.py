@@ -35,5 +35,25 @@ class LinkedList:
         new_node.next = current.next
         current.next = new_node
     
-    def
+    def delete(self, data):
+        if self.head ==  None:
+            return
+
+        if self.head == data:
+            self.head = self.head.next
+            return
+
+        current = self.head
+        previous = None
+
+        while current is not None and current != data:
+            previous = current
+            current = current.next
+        
+        if current is None:
+            return
+        
+        previous.next = current.next
+
+
 
