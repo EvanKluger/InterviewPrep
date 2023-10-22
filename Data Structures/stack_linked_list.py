@@ -82,9 +82,3 @@ class Stack_ll:
     def is_empty(self):
         return self.items.head is None
     
-            
-
-            
-
-
-        
