@@ -41,7 +41,9 @@ def merge(arr1, arr2):
     return merged
 
     
-
+arr = [38, 27, 43, 3, 9, 82, 10]
+sorted_arr = merge_sort(arr)
+print(sorted_arr)
 
     
 

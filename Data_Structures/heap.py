@@ -53,10 +53,13 @@ class Heap:
     def heapify_up(self, index):
         while index != 0 and self.heap[(index-1)//2] > self.heap[index]:
             self.heap[(index-1)//2], self.heap[index] = self.heap[index], self.heap[(index-1)//2]
+            index = (index - 1) // 2 
+
         
     def is_empty(self):
         return self.size() == 0
 
     def size(self):
         return len(self.heap) 
+   
 
